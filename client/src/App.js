@@ -5,8 +5,8 @@ import axios from 'axios';
 function App() {
   const [message, setMessage] = useState('');
 
-  useEffect(function() {
-    fetch('/api').then(response => response.json())
+  useEffect(() => {
+    axios.get('/api').then(response => response.data)
     .then(response => {
       console.log(response.message);
       setMessage(response.message);
