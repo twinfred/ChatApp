@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "A Real-Time chat application sends and shows messages to a recipient instantly without any page refresh.",
+  "main": "server/index.js",
+  "engines": {
+    "node": "your-node-version"
+  },
+  "scripts": {
+    "client": "cd client && npm start",
+    "start": "nodemon server/index.js",
+    "build": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tbd..."
+  },
+  "author": "Tim Winfred - twinfred@gmail.com",
+  "license": "ISC"
+}
